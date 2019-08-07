@@ -1,0 +1,19 @@
+{
+  "name": "back-end-take-home",
+  "version": "1.0.0",
+  "description": "At Guestlogix we feel that putting developers on the spot with advanced algorithmic puzzles doesn’t exactly highlight one’s true skillset. The intention of this assessment is to see how you approach and tackle a problem in the real world, not quivering in front of a whiteboard.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salam0smy/back-end-take-home.git"
+  },
+  "author": "Salam AlYahya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/salam0smy/back-end-take-home/issues"
+  },
+  "homepage": "https://github.com/salam0smy/back-end-take-home#readme"
+}
