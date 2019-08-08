@@ -29,7 +29,7 @@ const dijkstras = (start, finish, graph) => {
         if(node === finish) break; // we found the finish line
         let cost = costs[node];
         
-        let children = graph.getEdgesForVertex(node); // array
+        let children = graph.getEdgesForVertex(node);
         children.forEach(n => {
             let newCost = cost + 1;
             if (!costs[n]) {
@@ -44,10 +44,12 @@ const dijkstras = (start, finish, graph) => {
         
         processed.push(node);
         node = lowestCostNode(costs, processed);
-        // if we found finish.. break the loop
-        // than retrace back from finish node
     }
 
+    return buildResults(start, finish, parents, costs);
+}
+
+const buildResults = (start, finish, parents, costs)=>{
     let optimalPath = [finish];
     let parent = parents[finish];
     while (parent) {
@@ -62,6 +64,6 @@ const dijkstras = (start, finish, graph) => {
         path: optimalPath
       };
       return results;
-}
+};
 
 module.exports = { dijkstras };
