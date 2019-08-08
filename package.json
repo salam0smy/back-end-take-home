@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/salam0smy/back-end-take-home/issues"
   },
-  "homepage": "https://github.com/salam0smy/back-end-take-home#readme"
+  "homepage": "https://github.com/salam0smy/back-end-take-home#readme",
+  "dependencies": {
+    "csvtojson": "^2.0.10"
+  }
 }
