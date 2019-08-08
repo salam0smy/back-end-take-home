@@ -21,7 +21,7 @@ function validateAndFetchAirport(query, req, res, next) {
                 message: `Invalid ${query}`
             });
         } else {
-            req.origin = airport;
+            req[query] = airport;
             next();
         }
     }
