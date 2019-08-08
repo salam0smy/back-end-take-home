@@ -4,13 +4,11 @@ const port = 8080;
 const { dijkstras } = require('./dijkstras');
 const { initDb } = require("./db");
 
-
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/api/v1', require('./routes'));
-
 
 async function start() {
     const db = await initDb();
