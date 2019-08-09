@@ -19,6 +19,4 @@ function buildGraph(airports, routes){
     return graph;
 }
 
-// function Dijkstra
-
 module.exports = { loadFile, buildGraph };

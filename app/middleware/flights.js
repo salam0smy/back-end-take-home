@@ -15,11 +15,11 @@ function validateAndFetchAirport(query, req, res, next) {
         res.statusMessage = `Missing ${query}`;
         res.status(400).end();
     } else {
-        const airport = fetchAirport(airportCode);
+        const airport = fetchAirport(airportCode.toUpperCase());
         if (airport == null) {
-            res.send({
-                message: `Invalid ${query}`
-            });
+            res.send(
+                `Invalid ${query}`
+            );
         } else {
             req[query] = airport;
             next();
